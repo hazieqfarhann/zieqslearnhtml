@@ -1,0 +1,265 @@
+/* General CSS */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1F2937;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.header, 
+.footer {
+    flex: 0.2; /* Smaller height for header and footer */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentone, 
+.contenttwo, 
+.contentthree, 
+.contentfour {
+    flex: 1; /* Larger height for content sections */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+h1 {
+    color: #F9FaF8;
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.logotext {
+    color: #F9FaF8;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.smalltext {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.action,
+.actionbtn {
+    background-color: #3882F6;
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contenttwo, 
+.contentfour {
+    background-color: white;
+}
+
+.contentthree {
+    background-color: #E5E7EB;
+}
+
+.quote {
+    color: #515252;
+    font-style: italic;
+    font-size: 36px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: #F9FaF8;
+}
+
+.header .links {
+    display: flex;
+    gap: 20px;
+}
+
+.header .links a {
+    color: #80817e;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* First Section */
+.contentone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contentone .text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 50px;
+    margin-top: 0px;
+    max-width: 500px;
+}
+
+.contentone .actionbtn{
+    border-radius: 10px;
+}
+
+.contentone .image-placeholder {
+    background-color: rgb(92, 104, 136);
+    padding: 100px;
+    color: white;
+    border-radius: 20px;
+}
+
+/* Second Section */
+.contenttwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contenttwo .info-text {
+    color: #1F2937;
+    font-size: 36px;
+    margin-bottom: 20px;
+    max-width: 1000px;
+}
+
+.contenttwo .images-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
+}
+
+.contenttwo img {
+    border: 2px solid #466b9f;
+    border-radius: 20px;
+    padding: 50px;
+    width: 80px;
+}
+
+.contenttwo .smalltext {
+    justify-self: start;
+    align-items: center;
+    max-width: 200px;
+}
+/* Third Section */
+.contentthree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contentthree .quote {
+    margin-bottom: 20px;
+    max-width: 1000px;
+}
+
+.contentthree .author {
+    font-size: 24px;
+    align-self: center;
+    margin-left: 700px;
+    flex: 0;
+    max-width: 1000px;
+}
+
+/* Fourth Section */
+.contentfour {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contentfour .bluebackground {
+    background-color: #3882F6;
+    color: white;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto; /* Center the bluebackground */
+}
+
+.contentfour .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    padding-left: 100px; /* Reduce padding to move closer */
+    padding-right: 10px; /* Reduce padding to move closer */
+    max-width: 500px; /* Adjust max-width to move closer */
+}
+
+.right {
+    display: flex;
+    justify-self: center;
+    padding-left: 10px; /* Reduce padding to move closer */
+    max-width: 500px; /* Adjust max-width to move closer */
+}
+
+.callheader {
+    color: white;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+.textmessage {
+    color: white;
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+.actionbtn {
+    background-color: #3882F6;
+    font-size: 16px;
+    color: white;
+    padding: 5px 30px;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+/* Footer */
+.footer {
+    color: #E5E7EB;
+ }
